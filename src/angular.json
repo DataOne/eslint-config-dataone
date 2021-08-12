@@ -1,0 +1,82 @@
+{
+    "root": true,
+    "ignorePatterns": [
+      "dist/*"
+    ],
+    "extends": ["./index.json"],
+    "overrides": [
+      {
+        "files": [
+          "*.ts"
+        ],
+        "parserOptions": {
+          "project": [
+            "tsconfig.json",
+            "e2e/tsconfig.json"
+          ],
+          "createDefaultProgram": true
+        },
+        "extends": [
+          "plugin:@angular-eslint/recommended",
+          "plugin:@angular-eslint/template/process-inline-templates",
+          "airbnb-typescript/base"
+        ],
+        "rules": {
+          "@angular-eslint/component-selector": [
+            "error",
+            {
+              "prefix": "app",
+              "style": "kebab-case",
+              "type": "element"
+            }
+          ],
+          "@angular-eslint/directive-selector": [
+            "error",
+            {
+              "prefix": "app",
+              "style": "camelCase",
+              "type": "attribute"
+            }
+          ],
+          "@typescript-eslint/indent": "warn",
+          "@typescript-eslint/keyword-spacing": "off",
+          "@typescript-eslint/lines-between-class-members": "off",
+          "@typescript-eslint/no-use-before-define": "off",
+          "class-methods-use-this": "warn",
+          "eqeqeq": "warn",
+          "max-classes-per-file": "warn",
+          "no-continue": "warn",
+          "no-param-reassign": "warn",
+          "no-plusplus": [
+            "warn",
+            {
+              "allowForLoopAfterthoughts": true
+            }
+          ],
+          "no-restricted-syntax": "warn",
+          "prefer-destructuring": "warn",
+          "import/prefer-default-export": "off",
+          "linebreak-style": [
+            "error",
+            "windows"
+          ],
+          "max-len": [
+            "error",
+            {
+              "code": 120
+            }
+          ]
+        }
+      },
+      {
+        "files": [
+          "*.html"
+        ],
+        "extends": [
+          "plugin:@angular-eslint/template/recommended"
+        ],
+        "rules": {}
+      }
+    ]
+  }
+
