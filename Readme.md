@@ -5,11 +5,11 @@ This Repository is the collection of the DataOne TypeScript Linter files.
 ## Installation
 
 The package can be installe with the following command:
-`npm i eslint-config-dataone`
+`npm i --save-dev eslint-config-dataone`
 
 ## Usage
 
-You have to extend the ESLint File by this module.
+You have to extend the ESLint File by this module. if no ESLint file is existent, create one (.eslintrc.json).
 
 ```JSON
 {
@@ -24,6 +24,19 @@ There are specific configs for the different Framework. They all inherit from th
 - default: `eslint-config-dataone`
 - Angular: `eslint-config-dataone/angular`
 - React: `eslint-config-dataone/react`
+
+With the ESLint Plugin for VSCode, the errors and warnings are shown in the code directly.
+
+To print all Errors and Warnings, you can type `npx eslint .` in the console.
+With `npx eslint --fix .` some Errors can be automatically fixed.
+
+Its also possible to autofix all Problems on saving. Therefore, you have to add the following code to the VSCode Settings (Preferences > Settings > JSON view):
+
+```JSON
+"editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+},
+```
 
 ## Common Errors
 

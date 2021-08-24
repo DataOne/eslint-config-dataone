@@ -19,14 +19,24 @@
         "@typescript-eslint",
         "eslint-plugin-import"
     ],
+    "ignorePatterns": ["/dist/"],
     "rules": {
         "quotes": [
             "warn",
             "double"
         ],
-        "import/extensions": ["warn", {
-            "ts": "never",
-            "json": "always"
-          }]
+        "@typescript-eslint/quotes": [
+            "warn",
+            "double"
+        ],
+        "import/extensions": [
+            "warn",
+            {
+                "ts": "never",
+                "json": "always"
+            }
+        ],
+        "import/prefer-default-export": "off",
+        "@typescript-eslint/no-use-before-define": "off"
     }
 }

@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-dataone",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Package to deploy and update the DataOne Linter Files to JavaScript projects. ",
   "main": "index.json",
   "scripts": {
