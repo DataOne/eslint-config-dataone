@@ -24,3 +24,19 @@ There are specific configs for the different Framework. They all inherit from th
 - default: `eslint-config-dataone`
 - Angular: `eslint-config-dataone/angular`
 - React: `eslint-config-dataone/react`
+
+## Common Errors
+
+```none
+0:0  error  Parsing error: Cannot read file 'c:\*path*\tsconfig.json'
+```
+
+If this Error occures, it helps to ceate a *.vscode* folder with a *settings.json* file in the root directory. In that file, you define the relative path to the project.
+
+```JSON
+{
+  "eslint.workingDirectories": [
+    "src"
+  ]
+}
+```

@@ -17,7 +17,7 @@
   ],
   "author": "doadmin",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "@angular-eslint/eslint-plugin": "^12.3.1",
     "@angular-eslint/schematics": "^12.3.1",
     "@angular-eslint/template-parser": "^12.3.1",
