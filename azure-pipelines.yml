@@ -16,6 +16,7 @@ steps:
     repositoryName: 'DataOne/eslint-config-dataone'
     action: 'create'
     target: '$(Build.SourceVersion)'
-    tagSource: 'gitTag'
-    tagPattern: '*'
+    tagSource: 'userSpecifiedTag'
+    tag: '$(Build.SourceVersion)'
+    title: '$(Build.SourceVersion)'
     addChangeLog: false
