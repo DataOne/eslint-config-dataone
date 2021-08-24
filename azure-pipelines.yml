@@ -10,13 +10,12 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-  - task: GitHubRelease@1
-    inputs:
-      gitHubConnection: 'GitHub PAT, Pipeline'
-      repositoryName: 'DataOne/eslint-config-dataone'
-      action: 'create'
-      target: '$(Build.SourceVersion)'
-      tagSource: 'gitTag'
-      changeLogCompareToRelease: 'lastFullRelease'
-      changeLogType: 'commitBased'
-
+- task: GitHubRelease@1
+  inputs:
+    gitHubConnection: 'GitHub PAT, Pipeline'
+    repositoryName: 'DataOne/eslint-config-dataone'
+    action: 'create'
+    target: '$(Build.SourceVersion)'
+    tagSource: 'gitTag'
+    changeLogCompareToRelease: 'lastFullRelease'
+    changeLogType: 'commitBased'
