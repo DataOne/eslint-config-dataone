@@ -1,11 +1,8 @@
 {
   "name": "eslint-config-dataone",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "description": "Package to deploy and update the DataOne Linter Files to JavaScript projects. ",
   "main": "index.json",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "files": [
     "angular.json",
     "react.json"
@@ -15,7 +12,7 @@
     "eslint",
     "eslintconfig"
   ],
-  "author": "doadmin",
+  "author": "PN",
   "license": "MIT",
   "dependencies": {
     "@angular-eslint/eslint-plugin": "^12.3.1",
