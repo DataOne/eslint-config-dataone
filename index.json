@@ -59,6 +59,7 @@
                 "ts-check": false,
                 "minimumDescriptionLength": 3
             }
-        ]
+        ],
+        "linebreak-style": ["warn", "windows"]
     }
 }
