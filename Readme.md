@@ -9,7 +9,7 @@ The package can be installe with the following command:
 
 ## Usage
 
-You have to extend the ESLint File by this module. if no ESLint file is existent, create one (.eslintrc.json).
+You have to extend the ESLint File by this module. If no ESLint file is existent, create one (.eslintrc.json).
 
 ```JSON
 {
