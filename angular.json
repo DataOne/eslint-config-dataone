@@ -1,18 +1,11 @@
 {
   "root": true,
-  "ignorePatterns": [
-    "dist/*"
-  ],
+  "ignorePatterns": ["dist/*", "karma.conf.js"],
   "overrides": [
     {
-      "files": [
-        "*.ts"
-      ],
+      "files": ["*.ts"],
       "parserOptions": {
-        "project": [
-          "tsconfig.json",
-          "e2e/tsconfig.json"
-        ],
+        "project": ["tsconfig.json", "e2e/tsconfig.json"],
         "createDefaultProgram": true
       },
       "extends": [
@@ -40,13 +33,11 @@
         ],
         "@typescript-eslint/indent": "warn",
         "@typescript-eslint/keyword-spacing": "off",
-        "@typescript-eslint/lines-between-class-members": "off",
+        "@typescript-eslint/lines-between-class-members": ["warn", { "exceptAfterSingleLine": true }],
         "@typescript-eslint/no-use-before-define": "off",
-        "class-methods-use-this": "warn",
         "eqeqeq": "warn",
         "max-classes-per-file": "warn",
         "no-continue": "warn",
-        "no-param-reassign": "warn",
         "no-plusplus": [
           "warn",
           {
@@ -54,14 +45,9 @@
           }
         ],
         "no-restricted-syntax": "warn",
-        "prefer-destructuring": "warn",
         "import/prefer-default-export": "off",
-        "linebreak-style": [
-          "error",
-          "windows"
-        ],
         "max-len": [
-          "error",
+          "warn",
           {
             "code": 120
           }
@@ -69,9 +55,7 @@
       }
     },
     {
-      "files": [
-        "*.html"
-      ],
+      "files": ["*.html"],
       "parser": "@angular-eslint/template-parser",
       "plugins": ["@angular-eslint/template"],
       "rules": {}

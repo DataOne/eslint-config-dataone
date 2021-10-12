@@ -32,7 +32,7 @@
             "single"
         ],
         "import/extensions": [
-            "warn",
+            "off",
             {
                 "ts": "never",
                 "tsx": "never",
@@ -41,7 +41,6 @@
         ],
         "import/prefer-default-export": "off",
         "@typescript-eslint/no-use-before-define": "off",
-        "class-methods-use-this": "warn",
         "no-plusplus": "off",
         "no-use-before-define": "off",
         "import/no-dynamic-require": "off",
@@ -60,6 +59,12 @@
                 "minimumDescriptionLength": 3
             }
         ],
-        "linebreak-style": ["warn", "windows"]
+        "linebreak-style": ["warn", "windows"],
+        "import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/*.test.ts", "**/*.test.tsx", "e2e/**"]}],
+        "prefer-destructuring":"off",
+        "no-else-return":"off",
+        "class-methods-use-this":"off",
+        "@typescript-eslint/lines-between-class-members": ["warn", { "exceptAfterSingleLine": true }],
+        "no-param-reassign":"off"
     }
 }
