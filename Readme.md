@@ -4,7 +4,7 @@ This Repository is the collection of the DataOne TypeScript Linter files.
 
 ## Installation
 
-The package can be installe with the following command:
+The package can be installed with the following command:
 `npm i --save-dev eslint-config-dataone`
 
 ## Usage
@@ -37,6 +37,14 @@ Its also possible to autofix all Problems on saving. Therefore, you have to add 
     "source.fixAll.eslint": true
 },
 ```
+
+## Usage with Prettier
+You can use ESLint in combination with the Prettier-autoformatter. To do so, following steps have to be followed.  
+You have to install the VSCode Extensions [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) and [Prettier ESLint](https://marketplace.visualstudio.com/items?itemName=rvest.vs-code-prettier-eslint). The *Prettier ESLint* Extension lets you format a File with both Prettier and ESLint.  
+For better usage, some configs have to adjusted. These can be found in the auxiliaryConfigs folder:
+- *.vscode/settings.json*  
+- *.editorconfig*
+- *prettierrc.json*
 
 ## Common Errors
 
