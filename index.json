@@ -67,6 +67,6 @@
         "@typescript-eslint/lines-between-class-members": ["warn", { "exceptAfterSingleLine": true }],
         "no-param-reassign":"off",
         "no-return-await": "off",
-        "@typescript-eslint/return-await": ["warn", "in-try-catch"]
+        "@typescript-eslint/return-await": ["error", "in-try-catch"]
     }
 }
