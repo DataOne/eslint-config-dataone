@@ -65,6 +65,8 @@
         "no-else-return":"off",
         "class-methods-use-this":"off",
         "@typescript-eslint/lines-between-class-members": ["warn", { "exceptAfterSingleLine": true }],
-        "no-param-reassign":"off"
+        "no-param-reassign":"off",
+        "no-return-await": "off",
+        "@typescript-eslint/return-await": ["error", "in-try-catch"]
     }
 }
